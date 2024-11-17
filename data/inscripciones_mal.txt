@@ -1,0 +1,3 @@
+12345,Juan Perez,Materia1
+23456,Ana Gómez
+,Carlos Ruiz,Materia3

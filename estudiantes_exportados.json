@@ -1,0 +1,32 @@
+[
+    {
+        "cedula": "12345",
+        "nombre": "Juan Perez",
+        "materias": [
+            {
+                "codigo": "CS101",
+                "nombre": "Introducción a la programación"
+            }
+        ]
+    },
+    {
+        "cedula": "23456",
+        "nombre": "Ana Gómez",
+        "materias": [
+            {
+                "codigo": "CS102",
+                "nombre": "Estructuras de datos"
+            }
+        ]
+    },
+    {
+        "cedula": "34567",
+        "nombre": "Carlos Ruiz",
+        "materias": [
+            {
+                "codigo": "CS103",
+                "nombre": "Algoritmos avanzados"
+            }
+        ]
+    }
+]

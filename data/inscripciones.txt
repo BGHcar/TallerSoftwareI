@@ -1,0 +1,3 @@
+12345,Juan Perez,CS101,Introducción a la programación
+23456,Ana Gómez,CS102,Estructuras de datos
+34567,Carlos Ruiz,CS103,Algoritmos avanzados
