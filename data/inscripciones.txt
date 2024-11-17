@@ -1,8 +1,14 @@
 12345,Juan Perez,CS101,Introducción a la programación
+12345,Juan Perez,CS103,Algoritmos avanzados
 23456,Ana Gómez,CS102,Estructuras de datos
+23456,Ana Gómez,CS108,Base de datos
+23456,Ana Gómez,CS106,Inteligencia artificial
 34567,Carlos Ruiz,CS103,Algoritmos avanzados
+34567,Carlos Ruiz,CS105,Redes de computadoras
 45678,Laura López,CS104,Sistemas operativos
+45678,Laura López,CS106,Inteligencia artificial
 56789,Pedro Martínez,CS105,Redes de computadoras
+56789,Pedro Martínez,CS107,Matemáticas discretas
 67890,María García,CS106,Inteligencia artificial
 78901,José Pérez,CS107,Matemáticas discretas
 89012,Isabel Fernández,CS108,Base de datos
@@ -11,20 +17,61 @@
 22334,Martín Díaz,CS101,Introducción a la programación
 33445,Clara Torres,CS102,Estructuras de datos
 44556,Diego Molina,CS103,Algoritmos avanzados
+44556,Diego Molina,CS104,Sistemas operativos
 55667,Raquel Gómez,CS104,Sistemas operativos
 66778,Fernando López,CS105,Redes de computadoras
 77889,Elena Martín,CS106,Inteligencia artificial
 88990,Miguel Ruiz,CS107,Matemáticas discretas
 99001,Julia Pérez,CS108,Base de datos
 10222,José González,CS109,Desarrollo web
+10222,José González,CS101,Introducción a la programación
 21333,Teresa Sánchez,CS110,Programación móvil
 32444,Antonio Hernández,CS101,Introducción a la programación
 43555,Paola Herrera,CS102,Estructuras de datos
+43555,Paola Herrera,CS106,Inteligencia artificial
 54666,Sergio Gómez,CS103,Algoritmos avanzados
 65777,María Martín,CS104,Sistemas operativos
+65777,María Martín,CS110,Programación móvil
 76888,Juan Rodríguez,CS105,Redes de computadoras
+76888,Juan Rodríguez,CS102,Estructuras de datos
+76888,Juan Rodríguez,CS103,Algoritmos avanzados
 87999,Ana Sánchez,CS106,Inteligencia artificial
 99011,Francisco López,CS107,Matemáticas discretas
 11122,Carmen García,CS108,Base de datos
+11122,Carmen García,CS103,Algoritmos avanzados
 22233,Óscar Martínez,CS109,Desarrollo web
+22233,Óscar Martínez,CS110,Programación móvil
 33344,Luis Pérez,CS110,Programación móvil
+33344,Luis Pérez,CS106,Inteligencia artificial
+23455,Andrea Ruiz,CS101,Introducción a la programación
+23455,Andrea Ruiz,CS102,Estructuras de datos
+23455,Andrea Ruiz,CS105,Redes de computadoras
+34556,Esteban Castro,CS104,Sistemas operativos
+34556,Esteban Castro,CS107,Matemáticas discretas
+56788,Lucía Morales,CS109,Desarrollo web
+56788,Lucía Morales,CS103,Algoritmos avanzados
+67891,Javier Ortega,CS106,Inteligencia artificial
+67891,Javier Ortega,CS108,Base de datos
+78923,Oscar González,CS110,Programación móvil
+78923,Oscar González,CS104,Sistemas operativos
+89034,Lina Hernández,CS105,Redes de computadoras
+89034,Lina Hernández,CS109,Desarrollo web
+90134,Alberto García,CS102,Estructuras de datos
+90134,Alberto García,CS101,Introducción a la programación
+12346,Patricia García,CS103,Algoritmos avanzados
+12346,Patricia García,CS110,Programación móvil
+23457,Ricardo Martínez,CS106,Inteligencia artificial
+23457,Ricardo Martínez,CS107,Matemáticas discretas
+34567,Nerea Sánchez,CS108,Base de datos
+34567,Nerea Sánchez,CS103,Algoritmos avanzados
+45679,Mario Gómez,CS104,Sistemas operativos
+45679,Mario Gómez,CS110,Programación móvil
+56789,Margarita Ruiz,CS106,Inteligencia artificial
+56789,Margarita Ruiz,CS109,Desarrollo web
+67892,Raúl López,CS108,Base de datos
+67892,Raúl López,CS107,Matemáticas discretas
+78901,Patricia Díaz,CS103,Algoritmos avanzados
+89013,Sandra Pérez,CS102,Estructuras de datos
+89013,Sandra Pérez,CS110,Programación móvil
+90124,Ana Morales,CS106,Inteligencia artificial
+90124,Ana Morales,CS108,Base de datos

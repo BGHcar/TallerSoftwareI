@@ -63,7 +63,7 @@ class Menu:
             # Filtramos los estudiantes que están inscritos en esta materia
             if any(materia.codigo == codigo_materia for materia in estudiante.materias):
                 if not found:
-                    print(f"Materia: {codigo_materia}".center(50, "-"))
+                    print(f"Materia:{codigo_materia}".center(50, "-"))
                     found = True
                 print(f"{estudiante.nombre} ({estudiante.cedula})")
         
