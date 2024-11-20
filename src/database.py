@@ -38,10 +38,17 @@ class Database:
         self.conn.commit()
 
     def insert_inscripcion(self, inscripcion):
-        # Insertar inscripción
+        # Verificar si la inscripción ya existe
+        if self.is_inscripcion_existente(inscripcion.estudiante.cedula, inscripcion.materia.codigo):
+            print(f"El estudiante con cédula {inscripcion.estudiante.cedula} ya está inscrito en la materia {inscripcion.materia.codigo}.")
+            return  # O puedes lanzar una excepción, dependiendo de cómo quieras manejarlo
+        
+        # Si la inscripción no existe, insertamos
         self.cursor.execute("INSERT INTO inscripciones (cedula_estudiante, codigo_materia) VALUES (?, ?)", 
                             (inscripcion.estudiante.cedula, inscripcion.materia.codigo))
         self.conn.commit()
+        print(f"Inscripción exitosa para el estudiante {inscripcion.estudiante.cedula} en la materia {inscripcion.materia.codigo}.")
+
 
     def get_estudiantes(self):
         # Obtener todos los estudiantes
@@ -78,3 +85,32 @@ class Database:
         if row:
             return Materia(row[0], row[1])
         return None
+    
+    def is_inscripcion_existente(self, cedula_estudiante, codigo_materia):
+        try:
+            # Consulta SQL para verificar si la inscripción ya existe
+            query = """
+            SELECT 1
+            FROM inscripciones
+            WHERE cedula_estudiante = ? AND codigo_materia = ?
+            LIMIT 1
+            """
+            self.cursor.execute(query, (cedula_estudiante, codigo_materia))
+            result = self.cursor.fetchone()
+
+            # Devolver True si existe un registro, False si no
+            return result is not None
+        except sqlite3.Error as e:
+            print(f"Error al verificar inscripción: {e}")
+            return False
+
+
+    def get_lista_inscripciones(self, cedula):
+        # Obtener todas las inscripciones de un estudiante dado su cédula
+        self.cursor.execute('''SELECT m.codigo, m.nombre
+                               FROM inscripciones i
+                               JOIN materias m ON i.codigo_materia = m.codigo
+                               WHERE i.cedula_estudiante = ?''', (cedula,))
+        rows = self.cursor.fetchall()
+        # Crear una lista de objetos Materia para las materias en las que el estudiante está inscrito
+        return [Materia(row[0], row[1]) for row in rows]

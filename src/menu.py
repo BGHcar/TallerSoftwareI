@@ -20,12 +20,15 @@ class Menu:
 
             if opcion == "1":
                 archivo = input("Ingrese el nombre del archivo: ")
-                if not os.path.exists(f"data/{archivo}"):  # Verificación si el archivo existe
+                if not os.path.exists(f"data/{archivo}.txt"):  # Verificación si el archivo existe
                     print(f"El archivo {archivo} no se encuentra en la carpeta 'data'.")
                 else:
                     reader = FileReader(archivo, self.db)
                     reader.read_file()  # Llamar el método para cargar los datos
-                    print(f"Archivo {archivo} cargado correctamente.")
+                    if reader.error_count > 0:
+                        print(f"Se procesaron con errores {reader.error_count} líneas del archivo {archivo}.")
+                    else:
+                        print(f"Archivo {archivo} cargado correctamente sin errores.")
             elif opcion == "2":
                 self.show_total_materias()
             elif opcion == "3":
